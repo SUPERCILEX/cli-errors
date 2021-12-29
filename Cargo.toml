@@ -1,0 +1,16 @@
+cargo-features = ["strip"]
+
+[package]
+name = "cli-errors"
+version = "0.1.0"
+authors = ["Alex Saveau <saveau.alexandre@gmail.com>"]
+edition = "2021"
+description = "CLI Errors provides a wrapper type around anyhow to support exiting programs with an arbitrary exit code."
+repository = "https://github.com/SUPERCILEX/cli-errors"
+keywords = ["cli", "errors"]
+categories = ["command-line-interface"]
+license = "Apache-2.0"
+
+[dependencies]
+anyhow = "1.0.51"
+exitcode = "1.1.2"
