@@ -1,0 +1,17 @@
+[package]
+name = "cli-errors-macros"
+version = "0.1.0"
+authors = ["Alex Saveau <saveau.alexandre@gmail.com>"]
+edition = "2021"
+description = "CLI Errors's proc macros."
+repository = "https://github.com/SUPERCILEX/cli-errors"
+keywords = ["cli", "errors"]
+categories = ["command-line-interface"]
+license = "Apache-2.0"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0.14"
+syn = { version = "1.0.85", features = ["full"] }

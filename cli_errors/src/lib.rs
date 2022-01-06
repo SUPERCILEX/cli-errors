@@ -1,6 +1,7 @@
 use anyhow::{Error, Result};
 use exitcode::ExitCode;
 
+pub use cli_errors_macros::main;
 pub type CliResult<T> = Result<T, CliExitError>;
 
 #[derive(Debug)]
