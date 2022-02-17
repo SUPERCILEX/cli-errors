@@ -2,6 +2,7 @@ use anyhow::{Error, Result};
 use exitcode::ExitCode;
 
 pub use cli_errors_macros::main;
+
 pub type CliResult<T> = Result<T, CliExitError>;
 
 #[derive(Debug)]
@@ -20,5 +21,14 @@ impl<T> CliExitAnyhowWrapper<T> for Result<T> {
             code: error_code,
             source: Some(e),
         })
+    }
+}
+
+impl From<Error> for CliExitError {
+    fn from(e: Error) -> Self {
+        Self {
+            code: 1,
+            source: Some(e),
+        }
     }
 }

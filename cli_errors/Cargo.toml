@@ -1,6 +1,6 @@
 [package]
 name = "cli-errors"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Alex Saveau <saveau.alexandre@gmail.com>"]
 edition = "2021"
 description = "CLI Errors provides a wrapper type around anyhow to support exiting programs with an arbitrary exit code."
@@ -10,6 +10,6 @@ categories = ["command-line-interface"]
 license = "Apache-2.0"
 
 [dependencies]
-anyhow = "1.0.52"
-cli-errors-macros = { version = "0.2.0", path = "../cli_errors_macros" }
+anyhow = "1.0.53"
+cli-errors-macros = { version = "0.3.0", path = "../cli_errors_macros" }
 exitcode = "1.1.2"
