@@ -32,7 +32,7 @@ pub fn main(_args: TokenStream, input: TokenStream) -> TokenStream {
             }
         }
 
-        fn wrapped_main() -> CliResult<()> {
+        fn wrapped_main() -> cli_errors::CliResult<()> {
             #wrapped_code
         }
     })
