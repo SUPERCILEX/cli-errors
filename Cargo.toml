@@ -3,3 +3,12 @@ members = [
     "cli_errors",
     "cli_errors_macros",
 ]
+
+[workspace.package]
+version = "0.3.0"
+authors = ["Alex Saveau <saveau.alexandre@gmail.com>"]
+edition = "2021"
+repository = "https://github.com/SUPERCILEX/cli-errors"
+keywords = ["cli", "errors"]
+categories = ["command-line-interface"]
+license = "Apache-2.0"

@@ -1,15 +1,15 @@
 [package]
 name = "cli-errors"
-version = "0.3.0"
-authors = ["Alex Saveau <saveau.alexandre@gmail.com>"]
-edition = "2021"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
 description = "CLI Errors provides a wrapper type around anyhow to support exiting programs with an arbitrary exit code."
-repository = "https://github.com/SUPERCILEX/cli-errors"
-keywords = ["cli", "errors"]
-categories = ["command-line-interface"]
-license = "Apache-2.0"
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+license.workspace = true
 
 [dependencies]
-anyhow = "1.0.53"
+anyhow = "1.0.58"
 cli-errors-macros = { version = "0.3.0", path = "../cli_errors_macros" }
 exitcode = "1.1.2"
